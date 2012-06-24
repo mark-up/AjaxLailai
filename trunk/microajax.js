@@ -55,7 +55,6 @@ function microAjax(url, callbackFunction)
 			req.open("POST", url, true);
 			req.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 			req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-			req.setRequestHeader('Connection', 'close');
 		} else {
 			req.open("GET", url, true);
 		}
